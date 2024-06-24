@@ -22,6 +22,7 @@ import {
 import { useNavigation } from '@react-navigation/native';
 import debounce from 'lodash.debounce';
 import { useRouter } from 'expo-router';
+import { Colors } from '@/constants/Colors';
 
 const Search = () => {
 	const [userLocation, setUserLocation] = useState(null);
@@ -250,13 +251,14 @@ const Search = () => {
 				<Button
 					title='Get Current Location'
 					onPress={getLocationAsync}
-					color="#4b0082"
+					color={Colors.dark.primary}
 				/>
 				<Button
 					title='Confirm Location'
 					onPress={handleConfirmLocation}
 					disabled={locationExists}
-					color="#4b0082"
+					color={Colors.dark.primary}
+					
 				/>
 			</View>
 			<View style={styles.userInfoContainer}>
