@@ -143,12 +143,14 @@ export default function BecomeSellerScreen() {
 								</Text>
 							)}
 
-							<Button
+<TouchableOpacity
 								onPress={handleSubmit}
-								title='Submit'
+								style={[styles.button, loading && styles.buttonDisabled]}
 								disabled={loading}
                                 
-							/>
+							>
+								 <Text style={styles.buttonText}>Submit</Text>
+								 </TouchableOpacity>
 							{loading && (
 								<ActivityIndicator
 									size='large'
