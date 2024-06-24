@@ -1,0 +1,19 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+, "hooks/useColorScheme.web.js", "hooks/useColorScheme.js", "constants/Base.js", "components/upload/processingForm.jsx", "components/upload/marketForm.jsx", "components/upload/MapPicker.jsx", "app/(tabs)/upload/seller-form.jsx", "components/upload/_layout.jsx", "components/navigation/TabBarIcon.jsx", "components/home/PostItem.jsx", "app/(tabs)/home/PostDetail.jsx", "components/home/PostbyCategory.jsx", "components/home/HomePage.jsx", "components/common/ThemedView.jsx", "components/common/ThemedText.jsx", "app/sign-in.jsx", "app/+not-found.jsx", "app/+html.jsx", "app/_layout.jsx", "store/useAuthStore.js", "app/(tabs)/profile/index.sx"  ]
+}
