@@ -72,7 +72,7 @@ export default function ProfileScreen() {
 			</TouchableOpacity>
 
 			<TouchableOpacity
-				style={styles.button}
+				style={styles.buttonlog}
 				onPress={async () => {
 					await signOut(firebaseAuth);
 					clearAuth();
@@ -144,6 +144,16 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 5,
+    },
+	buttonlog: {
+        marginTop: 50,
+        height: 50,
+        paddingHorizontal: 130,
+        backgroundColor: '#CF1B1B',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 5,
+		marginTop:60,
     },
     btnText: {
         fontSize: 16,
